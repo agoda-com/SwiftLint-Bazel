@@ -1,0 +1,10 @@
+included:
+  - File.swift
+only_rules:
+  # - trailing_semicolon
+  - xctunwrap_rule
+  - xct_nullify_stored_properties
+  - throwable_test_cases
+
+throwable_test_cases:
+  severity: error
