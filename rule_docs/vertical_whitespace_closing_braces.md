@@ -13,9 +13,32 @@ Don't include vertical whitespace (empty line) before closing braces
 ## Non Triggering Examples
 
 ```swift
-do {
-  print("x is 5")
+print([foo {
+  var sum = 0
+  for i in 1...5 { sum += i }
+  return sum
+
+}, foo {
+  var mul = 1
+  for i in 1...5 { mul *= i }
+  return mul
+}])
+```
+
+```swift
+func foo() {
+  run(5) { x in
+    print(x)
+  }
 }
+```
+
+```swift
+[
+1,
+2,
+3
+]
 ```
 
 ```swift
@@ -38,38 +61,15 @@ foo(
 ```
 
 ```swift
-[
-1,
-2,
-3
-]
+do {
+  print("x is 5")
+}
 ```
 
 ```swift
 print([
   1
 ])
-```
-
-```swift
-print([foo {
-  var sum = 0
-  for i in 1...5 { sum += i }
-  return sum
-
-}, foo {
-  var mul = 1
-  for i in 1...5 { mul *= i }
-  return mul
-}])
-```
-
-```swift
-func foo() {
-  run(5) { x in
-    print(x)
-  }
-}
 ```
 
 ```swift
@@ -109,53 +109,6 @@ if bool1 {
 ## Triggering Examples
 
 ```swift
-do {
-  print("x is 5")
-↓
-  
-}
-```
-
-```swift
-do {
-  print("x is 5")
-↓
-
-}
-```
-
-```swift
-do {
-  print("x is 5")
-↓
-}
-```
-
-```swift
-foo(
-    x: 5,
-    y:6
-↓
-)
-```
-
-```swift
-[
-1,
-2,
-3
-↓
-]
-```
-
-```swift
-print([
-  1
-↓
-])
-```
-
-```swift
 print([foo {
   var sum = 0
   for i in 1...5 { sum += i }
@@ -176,4 +129,51 @@ func foo() {
   }
 ↓
 }
+```
+
+```swift
+[
+1,
+2,
+3
+↓
+]
+```
+
+```swift
+do {
+  print("x is 5")
+↓
+
+}
+```
+
+```swift
+do {
+  print("x is 5")
+↓
+  
+}
+```
+
+```swift
+foo(
+    x: 5,
+    y:6
+↓
+)
+```
+
+```swift
+do {
+  print("x is 5")
+↓
+}
+```
+
+```swift
+print([
+  1
+↓
+])
 ```

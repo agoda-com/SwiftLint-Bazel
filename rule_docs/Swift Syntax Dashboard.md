@@ -5,7 +5,7 @@ Efforts are actively under way to migrate most rules off SourceKit to use SwiftS
 Rules written using SwiftSyntax tend to be significantly faster and have fewer false positives
 than rules that use SourceKit to get source structure information.
 
-50 out of 229 (21%)
+50 out of 231 (21%)
 of SwiftLint's linter rules use SourceKit.
 
 ## Rules Using SourceKit
@@ -68,7 +68,7 @@ of SwiftLint's linter rules use SourceKit.
 
 ## Rules not Using SourceKit
 
-### Default Rules (76)
+### Default Rules (78)
 
 * [`block_based_kvo`](block_based_kvo.md): Block Based KVO
 * [`class_delegate_protocol`](class_delegate_protocol.md): Class Delegate Protocol
@@ -89,6 +89,7 @@ of SwiftLint's linter rules use SourceKit.
 * [`empty_parameters`](empty_parameters.md): Empty Parameters
 * [`empty_parentheses_with_trailing_closure`](empty_parentheses_with_trailing_closure.md): Empty Parentheses with Trailing Closure
 * [`for_where`](for_where.md): Prefer For-Where
+* [`force_and_optional_try_in_tests`](force_and_optional_try_in_tests.md): Missed Given/When/Then Rule
 * [`force_cast`](force_cast.md): Force Cast
 * [`force_try`](force_try.md): Force Try
 * [`function_body_length`](function_body_length.md): Function Body Length
@@ -105,6 +106,7 @@ of SwiftLint's linter rules use SourceKit.
 * [`legacy_hashing`](legacy_hashing.md): Legacy Hashing
 * [`legacy_nsgeometry_functions`](legacy_nsgeometry_functions.md): Legacy NSGeometry Functions
 * [`legacy_random`](legacy_random.md): Legacy Random
+* [`missed_given_when_then_rule`](missed_given_when_then_rule.md): Missed Given/When/Then Rule
 * [`multiple_closures_with_trailing_closure`](multiple_closures_with_trailing_closure.md): Multiple Closures with Trailing Closure
 * [`no_fallthrough_only`](no_fallthrough_only.md): No Fallthrough only
 * [`no_space_in_method_call`](no_space_in_method_call.md): No Space in Method Call

@@ -27,6 +27,7 @@
 * [`empty_parentheses_with_trailing_closure`](empty_parentheses_with_trailing_closure.md): Empty Parentheses with Trailing Closure
 * [`file_length`](file_length.md): File Length
 * [`for_where`](for_where.md): Prefer For-Where
+* [`force_and_optional_try_in_tests`](force_and_optional_try_in_tests.md): Missed Given/When/Then Rule
 * [`force_cast`](force_cast.md): Force Cast
 * [`force_try`](force_try.md): Force Try
 * [`function_body_length`](function_body_length.md): Function Body Length
@@ -47,6 +48,7 @@
 * [`legacy_random`](legacy_random.md): Legacy Random
 * [`line_length`](line_length.md): Line Length
 * [`mark`](mark.md): Mark
+* [`missed_given_when_then_rule`](missed_given_when_then_rule.md): Missed Given/When/Then Rule
 * [`multiple_closures_with_trailing_closure`](multiple_closures_with_trailing_closure.md): Multiple Closures with Trailing Closure
 * [`nesting`](nesting.md): Nesting
 * [`no_fallthrough_only`](no_fallthrough_only.md): No Fallthrough only
